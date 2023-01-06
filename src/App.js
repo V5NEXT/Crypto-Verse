@@ -3,6 +3,7 @@ import {Routes, Route, Link} from 'react-router-dom';
 import {Layout, Typography, Space} from 'antd';
 import './App.css'
 
+
 import {Navbar, Exchanges, HomePage, Cryptocurrencies, News, CryptoDetails} from './components'
 const App = () => {
   return (
@@ -22,9 +23,17 @@ const App = () => {
                     </Routes>
                 </div>
             </Layout>
-        </div>
         <div className='footer'>
-
+            <Typography.Title level={5} style={{color:'white', textAlign: 'center'}}>
+                Crypto <br/>
+                All rigths reserved
+            </Typography.Title>
+            <Space>
+                <Link to='/'>Home</Link>
+                <Link to='/exchanges'>Exchanges</Link>
+                <Link to='/news'>News</Link>
+            </Space>
+        </div>
         </div>
     </div>
   )
